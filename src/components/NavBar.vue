@@ -2,9 +2,16 @@
   <div>
     <nav class="border-gray-200 bg-[#f8f9fa] dark:bg-[#262c30]">
       <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-6">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-[#d3d2d2]"
-            >tuw nguyen</span
+        <a
+          href="https://flowbite.com/"
+          class="relative flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <div
+            class="absolute -left-3 top-9 h-[2px] w-[180px] bg-[#262c30] before:block before:h-[2px] before:w-[55px] before:-translate-x-3 before:-translate-y-4 before:rotate-90 before:bg-[#262c30] before:content-[''] dark:bg-[#f8f9fa] before:dark:bg-[#f8f9fa]"
+          ></div>
+          <span
+            class="self-center whitespace-nowrap text-2xl font-semibold tracking-normal transition-all duration-500 hover:tracking-wider dark:text-[#d3d2d2]"
+            >{{ logo_name }}</span
           >
         </a>
         <button
@@ -93,7 +100,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { Collapse } from 'flowbite'
+import info from '../../info.js'
 
+const logo_name = info.logo_name
 const navbar = ref(null)
 const toggleBtn = ref(null)
 const darkMode = ref(true)

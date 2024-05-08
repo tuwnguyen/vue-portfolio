@@ -1,7 +1,7 @@
 let info = {
-  name: 'Hrishikesh Paul',
-  logo_name: 'paul',
-  flat_picture: import('./src/assets/potrait.jpg'),
+  name: 'Huy Nguyen',
+  logo_name: 'tuw nguyen',
+  flat_picture: './src/assets/kingk.png',
   config: {
     use_cookies: true,
     navbar: {
@@ -11,9 +11,9 @@ let info = {
   description:
     'A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ',
   links: {
-    linkedin: 'https://www.linkedin.com/in/hrishikeshpaul/',
-    github: 'https://github.com/hrishikeshpaul',
-    angellist: 'https://angel.co/u/hrishikesh-paul',
+    linkedin: 'https://www.linkedin.com/in/nguyen-viethuy-941976167/',
+    github: 'https://github.com/tuwnguyen',
+    twitter: 'https://x.com/TuwNguyen',
     resume:
       'https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf'
   },
