@@ -1,5 +1,5 @@
 <template>
-  <div class="border-gray-200 bg-[#f8f9fa] dark:bg-[#343a3f]">
+  <div class="border-gray-200 bg-white dark:bg-[#343a3f]">
     <div
       class="mx-auto flex max-w-screen-xl flex-col justify-center gap-x-10 pt-4 md:flex-row xl:gap-x-32"
     >
@@ -54,7 +54,6 @@ import info from '../../info'
 
 const picture = info.flat_picture
 const description = info.description
-const name = info.name
 const linkedin = info.links.linkedin
 const github = info.links.github
 const twitter = info.links.twitter
