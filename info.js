@@ -104,44 +104,42 @@ let info = {
   skills: [
     {
       title: 'languages',
-      info: ['Python', 'Javascript', 'TypeScript', 'Java', 'C', 'C++', 'SQL', 'NoSQL', 'Ruby'],
-      icon: 'fa fa-code'
+      info: ['Python', 'Javascript', 'TypeScript', 'Java', 'C#', 'SQL', 'NoSQL'],
+      icon: 'fa-solid fa-code'
     },
     {
-      title: 'data frameworks',
-      info: ['Keras', 'Numpy', 'Pandas', 'OpenCV', 'SciPy', 'Sklearn', 'LibROSA', 'Pillow'],
-      icon: 'fa fa-cubes'
+      title: 'software architecture',
+      info: ['Microservice', 'Monolith', 'Layered', 'Client/Server', 'Event Driven', 'Serverless'],
+      icon: 'fa-solid fa-diagram-project'
     },
     {
       title: 'web technologies',
-      info: ['Vue', 'Angular', 'React', 'Node', 'Flask', 'HTML', 'CSS'],
-      icon: 'fas fa-laptop-code'
+      info: ['Vue', 'React', 'Node', 'HTML', 'CSS'],
+      icon: 'fa-solid fa-laptop-code'
     },
     {
       title: 'databases',
-      info: ['MongoDB', 'MySQL', 'OracleSQL', 'Neo4j'],
-      icon: 'fa fa-database'
+      info: ['MongoDB', 'MySQL', 'DynamoDB', 'SQL Server'],
+      icon: 'fa-solid fa-database'
     },
     {
       title: 'operating systems & tools',
-      info: [
-        'MacOS',
-        'Ubuntu',
-        'Windows',
-        'Android',
-        'Agile',
-        'Scrum',
-        'JIRA',
-        'Heroku',
-        'Firebase',
-        'AWS S3'
-      ],
-      icon: 'fas fa-tools'
+      info: ['MacOS', 'Ubuntu', 'Windows', 'Agile', 'Scrum', 'VS Code'],
+      icon: 'fa-solid fa-screwdriver-wrench'
     },
     {
-      title: 'design',
-      info: ['Illustrator', 'XD', 'Photoshop', 'Final Cut Pro'],
-      icon: 'fa fa-pencil-square-o'
+      title: 'aws cloud',
+      info: [
+        'AWS S3',
+        'EC2',
+        'API Gateway',
+        'DynamoDB',
+        'Lambda Function',
+        'Route53',
+        'CloudFront',
+        'WAF'
+      ],
+      icon: 'fa-brands fa-aws'
     }
   ],
   portfolio: [

@@ -7,6 +7,16 @@ export default {
       'roboto-mono': ['Roboto Mono', 'sans-serif']
     },
     extend: {
+      colors: {
+        primary: {
+          50: '#f8f9fa',
+          100: '#ffffff'
+        },
+        secondary: {
+          50: '#343a3f',
+          100: '#262c30'
+        }
+      },
       keyframes: {
         showMenu: {
           '0%': {
