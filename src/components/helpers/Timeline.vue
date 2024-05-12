@@ -34,7 +34,6 @@ const data = defineProps({
     data: Object
   }
 })
-console.log('data', data.data)
 </script>
 
 <style lang="scss" scoped></style>

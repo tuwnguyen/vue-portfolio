@@ -147,16 +147,16 @@ let info = {
       name: 'Sheet Recognizer',
       pictures: [
         {
-          img: import('./src/assets/portfolio/msr/one.png')
+          img: './src/assets/portfolio/msr/one.png'
         },
         {
-          img: import('./src/assets/portfolio/msr/two.png')
+          img: './src/assets/portfolio/msr/two.png'
         },
         {
-          img: import('./src/assets/portfolio/msr/three.png')
+          img: './src/assets/portfolio/msr/three.png'
         },
         {
-          img: import('./src/assets/portfolio/msr/four.png')
+          img: './src/assets/portfolio/msr/four.png'
         }
       ],
       technologies: ['Computer Vision', 'OpenCV', 'AI', 'Flask', 'Sockets'],
@@ -171,19 +171,19 @@ let info = {
       name: 'NoQ Job Portal',
       pictures: [
         {
-          img: import('./src/assets/portfolio/noq/logo.png')
+          img: './src/assets/portfolio/noq/logo.png'
         },
         {
-          img: import('./src/assets/portfolio/noq/one.png')
+          img: './src/assets/portfolio/noq/one.png'
         },
         {
-          img: import('./src/assets/portfolio/noq/two.png')
+          img: './src/assets/portfolio/noq/two.png'
         },
         {
-          img: import('./src/assets/portfolio/noq/three.png')
+          img: './src/assets/portfolio/noq/three.png'
         },
         {
-          img: import('./src/assets/portfolio/noq/four.png')
+          img: './src/assets/portfolio/noq/four.png'
         }
       ],
       technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
@@ -198,10 +198,10 @@ let info = {
       name: 'POST',
       pictures: [
         {
-          img: import('./src/assets/portfolio/post/one.png')
+          img: './src/assets/portfolio/post/one.png'
         },
         {
-          img: import('./src/assets/portfolio/post/two.png')
+          img: './src/assets/portfolio/post/two.png'
         }
       ],
       technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
@@ -216,10 +216,10 @@ let info = {
       name: 'Suicide Analyzer',
       pictures: [
         {
-          img: import('./src/assets/portfolio/suicide/suicide-analyzer.png')
+          img: './src/assets/portfolio/suicide/suicide-analyzer.png'
         },
         {
-          img: import('./src/assets/portfolio/suicide/suicide2-original.png')
+          img: './src/assets/portfolio/suicide/suicide2-original.png'
         }
       ],
       technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
@@ -234,16 +234,16 @@ let info = {
       name: 'Sentiment Analyzer',
       pictures: [
         {
-          img: import('./src/assets/portfolio/smit/one.png')
+          img: './src/assets/portfolio/smit/one.png'
         },
         {
-          img: import('./src/assets/portfolio/smit/two.png')
+          img: './src/assets/portfolio/smit/two.png'
         },
         {
-          img: import('./src/assets/portfolio/smit/three.png')
+          img: './src/assets/portfolio/smit/three.png'
         },
         {
-          img: import('./src/assets/portfolio/smit/four.png')
+          img: './src/assets/portfolio/smit/four.png'
         }
       ],
       technologies: ['LSTM', 'Keras', 'Angular', 'Tweepy', 'Heroku', 'Python'],
@@ -258,13 +258,13 @@ let info = {
       name: 'Clumpr',
       pictures: [
         {
-          img: import('./src/assets/portfolio/clumpr/logo.png')
+          img: './src/assets/portfolio/clumpr/logo.png'
         },
         {
-          img: import('./src/assets/portfolio/clumpr/one.png')
+          img: './src/assets/portfolio/clumpr/one.png'
         },
         {
-          img: import('./src/assets/portfolio/clumpr/two.png')
+          img: './src/assets/portfolio/clumpr/two.png'
         }
       ],
       technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
@@ -279,22 +279,22 @@ let info = {
       name: 'Nutricare',
       pictures: [
         {
-          img: import('./src/assets/portfolio/nc/one.png')
+          img: './src/assets/portfolio/nc/one.png'
         },
         {
-          img: import('./src/assets/portfolio/nc/two.png')
+          img: './src/assets/portfolio/nc/two.png'
         },
         {
-          img: import('./src/assets/portfolio/nc/three.png')
+          img: './src/assets/portfolio/nc/three.png'
         },
         {
-          img: import('./src/assets/portfolio/nc/four.png')
+          img: './src/assets/portfolio/nc/four.png'
         },
         {
-          img: import('./src/assets/portfolio/nc/five.png')
+          img: './src/assets/portfolio/nc/five.png'
         },
         {
-          img: import('./src/assets/portfolio/nc/six.png')
+          img: './src/assets/portfolio/nc/six.png'
         }
       ],
       technologies: ['Node', 'Angular', 'Express', 'MongDB', 'Medical'],
