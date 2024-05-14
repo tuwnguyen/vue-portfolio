@@ -13,5 +13,6 @@ import Portfolio from './components/Portfolio.vue'
     <AboutView id="about" />
     <Skills id="skills" />
     <Portfolio id="portfolio" />
+    <HomeView id="contact" />
   </div>
 </template>

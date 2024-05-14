@@ -25,3 +25,12 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Tailwindcss Flowbite
+https://flowbite.com/docs/components/timeline/
+https://flowbite.com/docs/components/badge/
+https://flowbite.com/docs/components/card/
+https://flowbite.com/blocks/marketing/feature/
+https://flowbite.com/docs/components/tabs/
+https://flowbite.com/docs/components/modal/
+https://v1.tailwindcss.com/components/flexbox-grids

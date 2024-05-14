@@ -6,7 +6,7 @@
       <li v-for="(title, idx) in tabTitles" :key="idx" class="me-2">
         <a
           @click="handleClick(title)"
-          class="inline-block rounded-t-lg border-b-2 border-transparent p-4 text-xl font-medium hover:border-gray-300 hover:text-gray-600 dark:text-[#cac9c9] dark:hover:text-gray-300 [&.active]:border-gray-300 [&.active]:text-gray-600"
+          class="inline-block rounded-t-lg border-b-2 border-transparent p-4 text-xl font-medium hover:border-gray-300 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-300 [&.active]:border-gray-300 [&.active]:text-black [&.active]:dark:text-[#cac9c9]"
           :class="{ active: selectedTitle === title }"
           >{{ title }}</a
         >
@@ -22,7 +22,7 @@ const slots = useSlots()
 const tabTitles = ref(slots.default().map((tab) => tab.props.title))
 const selectedTitle = ref(tabTitles.value[0])
 provide('selectedTitle', selectedTitle)
-console.log(':::selectedTitle:', selectedTitle.value)
+
 const handleClick = (title) => {
   selectedTitle.value = title
   console.log(selectedTitle.value)

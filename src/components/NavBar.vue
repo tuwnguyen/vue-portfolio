@@ -93,8 +93,9 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
-import { Collapse } from 'flowbite'
+import { ref } from 'vue'
+// import { onMounted, ref } from 'vue'
+// import { Collapse } from 'flowbite'
 import info from '../../info.js'
 
 const logo_name = info.logo_name
@@ -127,12 +128,12 @@ const toggleDark = () => {
   }
 }
 
-onMounted(() => {
-  const collapse = new Collapse(navbar, toggleBtn)
+// onMounted(() => {
+//   const collapse = new Collapse(navbar, toggleBtn)
 
-  // hide the target element
-  collapse.toggle()
-})
+//   // hide the target element
+//   collapse.toggle()
+// })
 </script>
 
 <style lang="scss" scoped></style>
