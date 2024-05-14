@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from 'tailwindcss/plugin'
 export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}', './node_modules/flowbite/**/*.js'],
   darkMode: 'class',
   theme: {
     fontFamily: {
@@ -45,6 +45,7 @@ export default {
   plugins: [
     plugin(({ addVariant }) => {
       addVariant('current', '&.active')
-    })
+    }),
+    import('flowbite/plugin')
   ]
 }

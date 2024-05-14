@@ -7,8 +7,8 @@
       </div>
       <hr width="50%" />
       <TabsWrapper>
-        <Tab title="development" :data="porfolio_info"></Tab>
-        <Tab title="architect" :data="null"></Tab>
+        <Tab title="development" :porfolioInfo="porfolio_info"></Tab>
+        <Tab title="architect" :porfolioInfo="null"></Tab>
       </TabsWrapper>
       <div v-if="showBtn !== `show less`" class="mt-4 text-center" id="showmore">
         <button
