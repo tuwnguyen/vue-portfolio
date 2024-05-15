@@ -7,9 +7,12 @@
       </div>
       <hr width="50%" />
       <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-8">
+        <h3 class="text-center text-gray-900 dark:text-gray-300">
+          lets get in touch <span class="text-2xl">🤝</span> send me a message:
+        </h3>
         <form action="#" class="space-y-4">
           <div>
-            <label for="email" class="mb-1 block text-xl text-gray-900 dark:text-gray-300"
+            <label for="email" class="mb-1 block text-lg text-gray-900 dark:text-gray-300"
               >email</label
             >
             <input
@@ -22,7 +25,7 @@
             />
           </div>
           <div>
-            <label for="subject" class="mb-1 block text-xl text-gray-900 dark:text-gray-300"
+            <label for="subject" class="mb-1 block text-lg text-gray-900 dark:text-gray-300"
               >name</label
             >
             <input
@@ -35,7 +38,7 @@
             />
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="mb-2 block text-xl text-gray-900 dark:text-gray-300"
+            <label for="message" class="mb-2 block text-lg text-gray-900 dark:text-gray-300"
               >message</label
             >
             <textarea
@@ -51,7 +54,7 @@
             @click.prevent="sendEmail()"
             class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
           >
-            Send message
+            send message
           </button>
         </form>
       </div>

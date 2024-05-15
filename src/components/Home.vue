@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="border-gray-200 bg-white dark:bg-[#343a3f]">
     <div
