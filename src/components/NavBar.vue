@@ -1,5 +1,7 @@
 <template>
-  <nav class="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-[#f8f9fa] dark:bg-[#262c30]">
+  <nav
+    class="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-[#f8f9fa] transition-colors duration-500 dark:bg-[#262c30]"
+  >
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-6">
       <a href="/" class="relative flex items-center space-x-3 rtl:space-x-reverse">
         <div
@@ -41,7 +43,7 @@
         ref="navbar"
       >
         <ul
-          class="mt-4 flex flex-col rounded-lg bg-gray-50 p-4 font-medium dark:bg-[#262c30] md:mt-0 md:flex-row md:space-x-8 md:bg-[#f8f9fa] md:p-0 md:dark:bg-[#262c30] rtl:space-x-reverse"
+          class="mt-4 flex flex-col rounded-lg bg-gray-50 p-4 font-medium transition-colors duration-500 dark:bg-[#262c30] md:mt-0 md:flex-row md:space-x-8 md:bg-[#f8f9fa] md:p-0 md:dark:bg-[#262c30] rtl:space-x-reverse"
         >
           <li class="">
             <a
@@ -78,9 +80,10 @@
               @click.prevent="toggleDark()"
               class="block rounded px-3 py-2 text-[#4f4f52] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-black md:dark:hover:bg-transparent md:dark:hover:text-white"
               ><i
+                class="w-4"
                 :class="{
-                  'fas fa-moon': darkMode,
-                  'far fa-moon': !darkMode
+                  'fa-regular fa-sun': darkMode,
+                  'fa-solid fa-moon': !darkMode
                 }"
                 v-tooltip.bottom="darkMode ? 'Night Mode' : 'Light Mode'"
               ></i>

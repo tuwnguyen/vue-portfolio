@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="border-gray-200 bg-white dark:bg-[#343a3f]">
+  <div class="border-gray-200 bg-white transition-colors duration-500 dark:bg-[#343a3f]">
     <div class="mx-auto max-w-screen-xl py-4">
       <div class="text-center">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">skills.</span>

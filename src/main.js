@@ -2,5 +2,9 @@ import './assets/tailwind.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import FloatingVue from 'floating-vue'
+import 'floating-vue/dist/style.css'
+const app = createApp(App)
 
-createApp(App).mount('#app')
+app.use(FloatingVue)
+app.mount('#app')

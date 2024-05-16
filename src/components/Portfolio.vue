@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="border-gray-200 bg-[#f8f9fa] dark:bg-[#262c30]">
+  <div class="border-gray-200 bg-[#f8f9fa] transition-colors duration-500 dark:bg-[#262c30]">
     <div class="mx-auto max-w-screen-xl py-4">
       <div class="text-center">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">portfolio.</span>
