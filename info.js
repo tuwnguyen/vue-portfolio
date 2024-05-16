@@ -14,6 +14,9 @@ let info = {
     linkedin: 'https://www.linkedin.com/in/nguyen-viethuy-941976167/',
     github: 'https://github.com/tuwnguyen',
     twitter: 'https://x.com/TuwNguyen',
+    discord: 'https://discord.com/',
+    instagram: 'https://www.instagram.com/nguyentuvv/',
+    facebook: 'https://www.facebook.com/tuw.nguyen.ha97',
     resume:
       'https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf'
   },

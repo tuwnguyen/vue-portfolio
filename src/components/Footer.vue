@@ -7,7 +7,11 @@
           >© 2024 <a href="/" class="hover:underline">Huy Nguyen.</a>
         </span>
         <div class="mt-4 flex sm:mt-0 sm:justify-center">
-          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <a
+            @click.prevent="open(info.links.facebook)"
+            href="#"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
             <svg
               class="h-6 w-6"
               aria-hidden="true"
@@ -23,7 +27,11 @@
             </svg>
             <span class="sr-only">Facebook page</span>
           </a>
-          <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <a
+            @click.prevent="open(info.links.instagram)"
+            href="#"
+            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
             <svg
               class="h-6 w-6"
               fill="currentColor"
@@ -39,7 +47,11 @@
             </svg>
             <span class="sr-only">Instagram account</span>
           </a>
-          <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <a
+            @click.prevent="open(info.links.discord)"
+            href="#"
+            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
             <svg
               class="h-6 w-6"
               aria-hidden="true"
@@ -53,7 +65,11 @@
             </svg>
             <span class="sr-only">Discord community</span>
           </a>
-          <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <a
+            @click.prevent="open(info.links.twitter)"
+            href="#"
+            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
             <svg
               class="h-6 w-6"
               aria-hidden="true"
@@ -69,7 +85,11 @@
             </svg>
             <span class="sr-only">Twitter page</span>
           </a>
-          <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+          <a
+            @click.prevent="open(info.links.linkedin)"
+            href="#"
+            class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
             <svg
               class="h-6 w-6"
               aria-hidden="true"
@@ -91,6 +111,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import info from '../../info'
+const open = (url) => {
+  window.open(url, '_blank')
+}
+</script>
 
 <style lang="scss" scoped></style>
