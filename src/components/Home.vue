@@ -16,33 +16,33 @@
         </div>
         <div class="flex justify-center gap-4">
           <button
-            class="text-1xl me-2 inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-3 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:bg-white dark:hover:text-black dark:focus:ring-black"
+            class="me-2 inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-3 text-center text-base font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:bg-white dark:hover:text-black dark:focus:ring-black"
             @click="open('github')"
             v-tooltip.bottom="'Github'"
           >
             <i class="fab fa-github"></i>
           </button>
           <button
-            class="text-1xl me-2 inline-flex items-center rounded-[4px] border border-solid border-[#007ab5] p-3 text-center font-medium text-[#007ab5] hover:bg-[#007ab5] hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-[#007ab5] dark:bg-[#343a3f] dark:text-[#007ab5] dark:hover:bg-[#007ab5] dark:hover:text-white dark:focus:ring-blue-800"
+            class="me-2 inline-flex items-center rounded-[4px] border border-solid border-[#007ab5] p-3 text-center text-base font-medium text-[#007ab5] hover:bg-[#007ab5] hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-[#007ab5] dark:bg-[#343a3f] dark:text-[#007ab5] dark:hover:bg-[#007ab5] dark:hover:text-white dark:focus:ring-blue-800"
             @click="open('linkedin')"
             v-tooltip.bottom="'LinkedIn'"
           >
-            <i class="fab fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
           </button>
 
           <button
-            class="text-1xl me-2 inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-3 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
+            class="me-2 inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-3 text-center text-base font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
             @click="open('twitter')"
             v-tooltip.bottom="'Twitter'"
           >
             <i class="fa-brands fa-x-twitter"></i>
           </button>
           <button
-            class="text-1xl me-2 inline-flex items-center rounded-[4px] border border-solid border-[#5bc7c7] bg-white p-3 px-[14px] text-center font-medium text-[#76cccc] hover:bg-[#76cccc] hover:text-white focus:outline-none focus:ring-4 focus:ring-[#76cccc] dark:border-[#76cccc] dark:bg-[#343a3f] dark:text-[#76cccc] dark:hover:bg-[#76cccc] dark:hover:text-white dark:focus:ring-[#76cccc]"
+            class="me-2 inline-flex items-center rounded-[4px] border border-solid border-fuchsia-500 bg-white p-3 px-[12px] text-center text-base font-medium text-fuchsia-600 hover:bg-fuchsia-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-fuchsia-600 dark:border-fuchsia-600 dark:bg-[#343a3f] dark:text-fuchsia-600 dark:hover:bg-fuchsia-600 dark:hover:text-white dark:focus:ring-fuchsia-600"
             @click="open('resume')"
             v-tooltip.bottom="'Resume'"
           >
-            <i class="fa-regular fa-file"></i>
+            <i class="fa-solid fa-file-pdf"></i>
           </button>
         </div>
       </div>

@@ -6,7 +6,7 @@
         <span class="text-3xl font-medium dark:text-[#cac9c9]">contact.</span>
       </div>
       <hr width="50%" />
-      <div class="mx-auto max-w-screen-md px-4 py-8 lg:py-8">
+      <div class="mx-auto max-w-screen-md px-4 py-8">
         <h3 class="text-center text-gray-900 dark:text-gray-300">
           lets get in touch <span class="text-2xl">🤝</span> send me a message:
         </h3>
@@ -50,19 +50,22 @@
             ></textarea>
           </div>
           <button
+            :disabled="disabledSubmit"
             type="button"
             @click.prevent="sendEmail()"
-            class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
+            class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black disabled:cursor-not-allowed dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
           >
             send message
           </button>
         </form>
       </div>
+      <Snackbar :showSnackbar :snackbarMessage :snackbarStatus @close="closeSnackbar()"> </Snackbar>
     </div>
   </div>
 </template>
 
 <script setup>
+import Snackbar from './helpers/Snackbar.vue'
 import { ref } from 'vue'
 import config from '../../config'
 import emailjs from '@emailjs/browser'
@@ -71,14 +74,15 @@ const name = ref('')
 const message = ref('')
 const showSnackbar = ref(false)
 const snackbarMessage = ref('')
-const snackbarColor = ref('')
-
+const snackbarStatus = ref('')
+const disabledSubmit = ref(false)
 const sendEmail = () => {
   if (!email.value || !name.value || !message.value) {
     showSnackbar.value = true
     snackbarMessage.value = 'Please fill all the fields!'
-    snackbarColor.value = 'red'
+    snackbarStatus.value = 'invalid'
   } else {
+    disabledSubmit.value = true
     const templateParams = {
       to_name: config.emailjs.toName,
       from_name: name.value,
@@ -96,18 +100,24 @@ const sendEmail = () => {
           message.value = ''
 
           showSnackbar.value = true
-          snackbarMessage.value = 'Thank you for reaching out.'
-          snackbarColor.value = 'green'
+          snackbarMessage.value = 'Thank you for reaching out!'
+          snackbarStatus.value = 'success'
+          disabledSubmit.value = false
           console.log('SUCCESS!', res.status, res.text)
         },
         (err) => {
           showSnackbar.value = true
           snackbarMessage.value = 'Oops! Something went wrong.'
-          snackbarColor.value = 'orange'
+          snackbarStatus.value = 'fail'
+          disabledSubmit.value = false
           console.log('FAILED...', err)
         }
       )
   }
+}
+
+const closeSnackbar = () => {
+  showSnackbar.value = false
 }
 </script>
 
