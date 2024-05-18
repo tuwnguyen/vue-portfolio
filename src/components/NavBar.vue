@@ -48,7 +48,7 @@
           <li class="">
             <a
               href="#about"
-              class="block rounded px-3 py-2 text-[#7c7c7d] dark:text-[#d3d2d2] md:bg-transparent md:p-0 md:text-[#7c7c7d]"
+              class="block rounded px-3 py-2 dark:text-[#d3d2d2] md:bg-transparent md:p-0 md:hover:text-fuchsia-500"
               aria-current="page"
               >about</a
             >
@@ -56,21 +56,21 @@
           <li>
             <a
               href="#skills"
-              class="block rounded px-3 py-2 text-[#7c7c7d] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-black md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
               >skills</a
             >
           </li>
           <li>
             <a
               href="#portfolio"
-              class="block rounded px-3 py-2 text-[#7c7c7d] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-black md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
               >portfolio</a
             >
           </li>
           <li>
             <a
               href="#contact"
-              class="block rounded px-3 py-2 text-[#7c7c7d] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-black md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
               >contact</a
             >
           </li>
@@ -78,7 +78,7 @@
             <a
               href="#"
               @click.prevent="toggleDark()"
-              class="block rounded px-3 py-2 text-[#4f4f52] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-black md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 text-[#4f4f52] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
               ><i
                 class="w-4"
                 :class="{
@@ -130,13 +130,6 @@ const toggleDark = () => {
     }
   }
 }
-
-// onMounted(() => {
-//   const collapse = new Collapse(navbar, toggleBtn)
-
-//   // hide the target element
-//   collapse.toggle()
-// })
 </script>
 
 <style lang="scss" scoped></style>

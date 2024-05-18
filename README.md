@@ -34,3 +34,7 @@ https://flowbite.com/blocks/marketing/feature/
 https://flowbite.com/docs/components/tabs/
 https://flowbite.com/docs/components/modal/
 https://v1.tailwindcss.com/components/flexbox-grids
+
+
+### Vue libraries
+https://floating-vue.starpad.dev/guide/

@@ -5,8 +5,12 @@
       <div v-show="showModal" class="relative z-10">
         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
         <Transition name="modal-inner">
+          <!-- <div
+            v-if="showModal"
+            class="fixed left-0 right-0 top-0 z-50 h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-x-hidden md:inset-0"
+          > -->
           <div v-if="showModal" class="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div class="flex min-h-full items-center justify-center p-8">
+            <div class="flex min-h-full items-center justify-center p-8 pt-32">
               <div class="relative max-h-full w-full max-w-2xl">
                 <!-- Modal content -->
                 <div class="relative rounded-lg bg-white shadow dark:bg-gray-700 sm:mt-0">
@@ -38,7 +42,7 @@
                     </button>
                   </div>
                   <!-- Modal body -->
-                  <div class="space-y-3 p-6 pt-1">
+                  <div class="h-[600px] space-y-3 overflow-y-auto p-6 pt-1">
                     <time
                       class="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-400"
                       >{{ modalInfo.date }} • {{ modalInfo.category }}</time
