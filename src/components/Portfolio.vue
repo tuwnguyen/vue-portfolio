@@ -7,17 +7,19 @@
       </div>
       <hr width="50%" />
       <TabsWrapper>
-        <Tab title="development" :porfolioInfo="porfolio_info"></Tab>
-        <Tab title="architect" :porfolioInfo="null"></Tab>
+        <Tab
+          title="development"
+          :porfolioInfo="porfolio_info"
+          :showBtn
+          @show-more="showMore()"
+        ></Tab>
+        <Tab
+          title="architect"
+          :porfolioInfo="architect_info"
+          :showBtn
+          @show-more="showMore()"
+        ></Tab>
       </TabsWrapper>
-      <div v-if="showBtn !== `show less`" class="mt-4 text-center" id="showmore">
-        <button
-          @click.prevent="showMore()"
-          class="inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
-        >
-          {{ showBtn }}
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -30,7 +32,8 @@ import { onMounted, ref, watch } from 'vue'
 
 const all_infos = info.portfolio
 const porfolio_info = ref([])
-const showBtn = ref('show more')
+const architect_info = ref([])
+const showBtn = ref(true)
 const showNumber = ref(3)
 
 onMounted(() => {
@@ -39,7 +42,7 @@ onMounted(() => {
   }
 })
 
-watch(showNumber, (newShowNumber, oldShowNumber) => {
+watch(showNumber, (newShowNumber) => {
   porfolio_info.value = []
   for (let i = 0; i < newShowNumber; i++) {
     porfolio_info.value.push(all_infos[i])
@@ -49,10 +52,10 @@ watch(showNumber, (newShowNumber, oldShowNumber) => {
 const showMore = () => {
   if (showNumber.value !== all_infos.length) {
     showNumber.value += 3
-    location.href = '#showmore'
+    location.href = '#contact'
     if (showNumber.value > all_infos.length) {
       showNumber.value = all_infos.length
-      showBtn.value = 'show less'
+      showBtn.value = false
     }
   }
 }
