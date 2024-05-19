@@ -2,16 +2,21 @@
 <template>
   <div class="border-gray-200 bg-white transition-colors duration-500 dark:bg-[#343a3f]">
     <div class="mx-auto max-w-screen-xl py-4">
-      <div class="text-center">
+      <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">contact.</span>
       </div>
       <hr width="50%" />
       <div class="mx-auto max-w-screen-md px-4 py-8">
-        <h3 class="text-center text-gray-900 dark:text-gray-300">
+        <h3
+          class="text-center text-gray-900 dark:text-gray-300"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           lets get in touch <span class="text-2xl">🤝</span> send me a message:
         </h3>
         <form action="#" class="space-y-4">
-          <div>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
             <label for="email" class="mb-1 block text-lg text-gray-900 dark:text-gray-300"
               >email</label
             >
@@ -24,7 +29,7 @@
               required
             />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
             <label for="subject" class="mb-1 block text-lg text-gray-900 dark:text-gray-300"
               >name</label
             >
@@ -37,7 +42,12 @@
               required
             />
           </div>
-          <div class="sm:col-span-2">
+          <div
+            class="sm:col-span-2"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <label for="message" class="mb-2 block text-lg text-gray-900 dark:text-gray-300"
               >message</label
             >
@@ -54,6 +64,10 @@
             type="button"
             @click.prevent="sendEmail()"
             class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black disabled:cursor-not-allowed dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
+            data-aos="fade"
+            data-aos-once="true"
+            data-aos-duration="1000"
+            data-aos-offset="50"
           >
             send message
           </button>
@@ -66,7 +80,7 @@
 
 <script setup>
 import Snackbar from './helpers/Snackbar.vue'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import config from '../../config'
 import emailjs from '@emailjs/browser'
 const email = ref('')
@@ -119,6 +133,14 @@ const sendEmail = () => {
 const closeSnackbar = () => {
   showSnackbar.value = false
 }
+
+watch(showSnackbar, (newShowSnackbar) => {
+  if (newShowSnackbar) {
+    setTimeout(() => {
+      showSnackbar.value = false
+    }, 2000)
+  }
+})
 </script>
 
 <style lang="scss" scoped></style>

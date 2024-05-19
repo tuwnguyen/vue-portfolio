@@ -34,7 +34,17 @@ https://flowbite.com/blocks/marketing/feature/
 https://flowbite.com/docs/components/tabs/
 https://flowbite.com/docs/components/modal/
 https://v1.tailwindcss.com/components/flexbox-grids
+https://flowbite.com/docs/components/tooltips/
+https://flowbite.com/docs/components/toast/
+https://flowbite.com/blocks/marketing/contact/
+https://flowbite.com/docs/components/gallery/
 
 
 ### Vue libraries
 https://floating-vue.starpad.dev/guide/
+
+### Emailjs
+emailjs.com
+
+### AOS library
+https://www.npmjs.com/package/aos

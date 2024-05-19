@@ -2,7 +2,7 @@
 <template>
   <div class="border-gray-200 bg-white transition-colors duration-500 dark:bg-[#343a3f]">
     <div class="mx-auto max-w-screen-xl py-4">
-      <div class="text-center">
+      <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="text-center">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">skills.</span>
       </div>
       <hr width="50%" />
@@ -11,6 +11,13 @@
           v-for="(skill, idx) in skills"
           :key="idx"
           class="flex flex-col items-center justify-start p-2 text-center"
+          data-aos="fade-up"
+          data-aos-offset="10"
+          data-aos-delay="30"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
         >
           <div
             class="mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-secondary-50 dark:bg-primary-50 lg:h-12 lg:w-12"

@@ -12,6 +12,13 @@
           v-for="(project, idx) in porfolioInfo"
           :key="idx"
           class="max-h-svh w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-[#343a3f] sm:w-1/2 md:w-1/3"
+          data-aos="fade-up"
+          data-aos-offset="100"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
         >
           <a href="#">
             <img class="h-auto rounded-t-lg" :src="project.pictures[0].img" alt="" />

@@ -2,6 +2,9 @@
 <template>
   <div class="border-gray-200 bg-white transition-colors duration-500 dark:bg-[#343a3f]">
     <div
+      data-aos="fade"
+      data-aos-once="true"
+      data-aos-duration="1000"
       class="mx-auto flex max-w-screen-xl flex-col justify-center gap-x-10 pt-4 md:flex-row xl:gap-x-32"
     >
       <img

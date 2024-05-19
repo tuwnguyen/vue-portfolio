@@ -2,7 +2,7 @@
 <template>
   <div class="border-gray-200 bg-[#f8f9fa] transition-colors duration-500 dark:bg-[#262c30]">
     <div class="mx-auto max-w-screen-xl py-4">
-      <div class="text-center">
+      <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="text-center">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">portfolio.</span>
       </div>
       <hr width="50%" />

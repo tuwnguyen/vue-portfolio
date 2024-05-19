@@ -1,10 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <p class="my-4 text-2xl font-medium dark:text-[#cac9c9]">{{ data.data.title }}</p>
+  <p
+    data-aos="fade"
+    data-aos-once="true"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-duration="1000"
+    class="my-4 text-2xl font-medium dark:text-[#cac9c9]"
+  >
+    {{ data.data.title }}
+  </p>
   <ol
     v-for="(e, idx) in data.data.data"
     :key="idx"
     class="relative border-s border-gray-200 dark:border-gray-700"
+    data-aos="fade-up"
+    data-aos-once="true"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-duration="1000"
   >
     <li class="mb-10 ms-4">
       <div

@@ -2,7 +2,12 @@
   <div
     class="border-b border-gray-200 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400"
   >
-    <ul class="-mb-px flex flex-wrap justify-center">
+    <ul
+      class="-mb-px flex flex-wrap justify-center"
+      data-aos="fade"
+      data-aos-once="true"
+      data-aos-duration="1000"
+    >
       <li v-for="(title, idx) in tabTitles" :key="idx" class="me-2 cursor-pointer">
         <a
           @click="handleClick(title)"
