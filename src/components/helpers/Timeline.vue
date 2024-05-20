@@ -5,7 +5,7 @@
     data-aos-once="true"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-duration="1000"
+    data-aos-duration="500"
     class="my-4 text-2xl font-medium dark:text-[#cac9c9]"
   >
     {{ data.data.title }}
@@ -18,7 +18,7 @@
     data-aos-once="true"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-duration="1000"
+    data-aos-duration="500"
   >
     <li class="mb-10 ms-4">
       <div

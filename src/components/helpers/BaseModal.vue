@@ -3,7 +3,7 @@
   <Teleport to="body">
     <Transition name="modal-outer">
       <div v-show="showModal" class="relative z-10">
-        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+        <div class="fixed inset-0 backdrop-blur-sm transition-opacity"></div>
         <Transition name="modal-inner">
           <!-- <div
             v-if="showModal"
@@ -13,7 +13,7 @@
             <div class="flex min-h-full items-center justify-center p-8 pt-32">
               <div class="relative max-h-full w-full max-w-2xl">
                 <!-- Modal content -->
-                <div class="relative rounded-lg bg-white shadow dark:bg-gray-700 sm:mt-0">
+                <div class="relative rounded-lg bg-white shadow dark:bg-[#0f182a] sm:mt-0">
                   <!-- Modal header -->
                   <div
                     class="flex items-start justify-between rounded-t border-b p-5 dark:border-gray-600"

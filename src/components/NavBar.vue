@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-[#f8f9fa] transition-colors duration-500 dark:bg-[#262c30]"
+    class="fixed left-0 right-0 top-0 z-50 border-gray-200 bg-white transition-colors duration-500 dark:bg-[#0f182a]"
   >
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-6">
       <a href="/" class="relative flex items-center space-x-3 rtl:space-x-reverse">
@@ -43,49 +43,60 @@
         ref="navbar"
       >
         <ul
-          class="mt-4 flex flex-col rounded-lg bg-gray-50 p-4 font-medium transition-colors duration-500 dark:bg-[#262c30] md:mt-0 md:flex-row md:space-x-8 md:bg-[#f8f9fa] md:p-0 md:dark:bg-[#262c30] rtl:space-x-reverse"
+          class="mt-4 flex flex-col rounded-lg bg-white p-4 font-medium transition-colors duration-500 dark:bg-[#0f182a] md:mt-0 md:flex-row md:space-x-8 md:p-0 rtl:space-x-reverse"
         >
           <li class="">
             <a
+              @click="$emit('scroll', 'about')"
               href="#about"
-              class="block rounded px-3 py-2 dark:text-[#d3d2d2] md:bg-transparent md:p-0 md:hover:text-fuchsia-500"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
               aria-current="page"
               >about</a
             >
           </li>
           <li>
             <a
+              @click="$emit('scroll', 'skills')"
               href="#skills"
-              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
               >skills</a
             >
           </li>
           <li>
             <a
-              href="#portfolio"
-              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
-              >portfolio</a
+              @click="$emit('scroll', 'portfolio')"
+              href="#work"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
+              >work</a
             >
           </li>
           <li>
             <a
+              @click="$emit('scroll', 'contact')"
               href="#contact"
-              class="block rounded px-3 py-2 hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
               >contact</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="#"
+              class="block rounded px-3 py-2 text-sky-500 hover:underline md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+              >resume</a
             >
           </li>
           <li>
             <a
               href="#"
               @click.prevent="toggleDark()"
-              class="block rounded px-3 py-2 text-[#4f4f52] hover:bg-gray-100 dark:text-[#d3d2d2] dark:hover:text-[#d3d2d2] md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-fuchsia-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block rounded px-3 py-2 hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
               ><i
                 class="w-4"
                 :class="{
                   'fa-regular fa-sun': darkMode,
                   'fa-solid fa-moon': !darkMode
                 }"
-                v-tooltip.bottom="darkMode ? 'Night Mode' : 'Light Mode'"
+                v-tooltip.bottom="darkMode ? 'Dark Mode' : 'Light Mode'"
               ></i>
             </a>
           </li>
@@ -105,6 +116,7 @@ const logo_name = info.logo_name
 const navbar = ref(null)
 const toggleBtn = ref(null)
 const darkMode = ref(true)
+defineEmits(['scroll'])
 const toggleDark = () => {
   if (localStorage.getItem('color-theme')) {
     if (localStorage.getItem('color-theme') === 'light') {

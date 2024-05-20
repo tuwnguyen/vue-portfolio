@@ -11,11 +11,11 @@
         <div
           v-for="(project, idx) in porfolioInfo"
           :key="idx"
-          class="max-h-svh w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-[#343a3f] sm:w-1/2 md:w-1/3"
+          class="max-h-svh w-full max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-[#0f182a] sm:w-1/2 md:w-1/3"
           data-aos="fade-up"
           data-aos-offset="100"
-          data-aos-delay="10"
-          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
@@ -71,9 +71,10 @@
       <div v-if="showBtn" class="mt-4 text-center" id="showmore">
         <button
           @click.prevent="$emit('show-more')"
-          class="inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#343a3f] dark:text-white dark:hover:border-black dark:hover:bg-black dark:hover:text-white dark:focus:ring-black"
+          class="inline-flex items-center rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black dark:border-white dark:bg-[#0b1829] dark:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black dark:focus:ring-black"
         >
-          show more
+          see more
+          <i class="fa-solid fa-arrow-right ml-2"></i>
         </button>
       </div>
     </div>
