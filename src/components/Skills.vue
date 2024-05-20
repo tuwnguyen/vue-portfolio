@@ -1,11 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="border-gray-200 bg-white transition-colors duration-500 dark:bg-[#343a3f]">
-    <div class="mx-auto max-w-screen-xl py-4">
+  <div
+    class="bg-light-mode dark:bg-dark-mode border-gray-200 bg-cover bg-right transition-colors duration-500 dark:bg-[150rem]"
+  >
+    <div class="bg-grid-slate dark:bg-grid-slate-dark mx-auto max-w-screen-xl bg-center py-4">
       <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="text-center">
         <span class="text-3xl font-medium dark:text-[#cac9c9]">skills.</span>
       </div>
-      <hr width="50%" />
       <div class="mt-4 space-y-10 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
         <div
           v-for="(skill, idx) in skills"
@@ -13,8 +14,8 @@
           class="flex flex-col items-center justify-start p-2 text-center"
           data-aos="fade-up"
           data-aos-offset="10"
-          data-aos-delay="30"
-          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
