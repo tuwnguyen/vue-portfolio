@@ -52,7 +52,14 @@ watch(showNumber, (newShowNumber) => {
 const showMore = () => {
   if (showNumber.value !== all_infos.length) {
     showNumber.value += 3
-    location.href = '#contact'
+    setTimeout(() => {
+      let heightScroll = document.getElementsByClassName('smcard')[0].clientHeight
+      if (window.innerWidth <= 768 && showNumber.value < all_infos.length) heightScroll *= 3
+      window.scrollBy({
+        top: heightScroll,
+        behavior: 'smooth'
+      })
+    }, 2)
     if (showNumber.value > all_infos.length) {
       showNumber.value = all_infos.length
       showBtn.value = false
