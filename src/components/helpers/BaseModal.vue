@@ -10,10 +10,12 @@
             class="fixed left-0 right-0 top-0 z-50 h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-x-hidden md:inset-0"
           > -->
           <div v-if="showModal" class="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div class="flex min-h-full items-center justify-center p-8 pt-32">
+            <div class="flex min-h-full items-center justify-center p-8 pt-24">
               <div class="relative max-h-full w-full max-w-2xl">
                 <!-- Modal content -->
-                <div class="relative rounded-lg bg-white shadow dark:bg-[#0f182a] sm:mt-0">
+                <div
+                  class="relative rounded-lg border border-solid border-slate-400 bg-white shadow-lg dark:border-white dark:bg-[#0f182a] sm:mt-0"
+                >
                   <!-- Modal header -->
                   <div
                     class="flex items-start justify-between rounded-t border-b p-5 dark:border-gray-600"

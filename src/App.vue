@@ -6,12 +6,24 @@ import Skills from './components/Skills.vue'
 import Portfolio from './components/Portfolio.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
-import { onMounted } from 'vue'
+import { onMounted, provide, ref } from 'vue'
+const selectedNav = ref('home')
+
+provide('selectedNav', selectedNav)
+
+window.onscroll = () => {
+  ;['about', 'contact', 'skills', 'work'].forEach((nav) => {
+    let elementPosition = document.getElementById(nav).offsetTop
+    if (scrollY >= elementPosition - 80) {
+      selectedNav.value = nav
+    }
+  })
+}
+
 onMounted(() => {
   ;['about', 'contact', 'skills', 'work'].forEach((l) => {
     if (window.location.href.includes(l)) {
-      var elementPosition = document.getElementById(l).offsetTop
-      console.log('skills', elementPosition, l)
+      let elementPosition = document.getElementById(l).offsetTop
       setTimeout(() => {
         window.scrollTo({ top: elementPosition - 100, behavior: 'smooth' })
       }, 2)
@@ -21,17 +33,17 @@ onMounted(() => {
 
 const scrollTo = (ele) => {
   if (ele == 'home') {
-    this.$router.push(`/`)
     window.scrollTo({ top: -80, behavior: 'smooth' })
   } else {
-    console.log('here', ele)
-    var elementPosition = document.getElementById(ele).offsetTop
-    console.log('here', elementPosition)
+    handleClickNav(ele)
+    let elementPosition = document.getElementById(ele).offsetTop
     setTimeout(() => {
       window.scrollTo({ top: elementPosition - 80, behavior: 'smooth' })
     }, 2)
   }
 }
+
+const handleClickNav = (nav) => (selectedNav.value = nav)
 </script>
 
 <template>

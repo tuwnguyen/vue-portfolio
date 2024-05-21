@@ -49,8 +49,9 @@
             <a
               @click="$emit('scroll', 'about')"
               href="#about"
-              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 [&.active]:text-sky-500"
               aria-current="page"
+              :class="{ active: selectedNav === 'about' }"
               >about</a
             >
           </li>
@@ -58,15 +59,17 @@
             <a
               @click="$emit('scroll', 'skills')"
               href="#skills"
-              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 [&.active]:text-sky-500"
+              :class="{ active: selectedNav === 'skills' }"
               >skills</a
             >
           </li>
           <li>
             <a
-              @click="$emit('scroll', 'portfolio')"
+              @click="$emit('scroll', 'work')"
               href="#work"
-              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 [&.active]:text-sky-500"
+              :class="{ active: selectedNav === 'work' }"
               >work</a
             >
           </li>
@@ -74,7 +77,8 @@
             <a
               @click="$emit('scroll', 'contact')"
               href="#contact"
-              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0"
+              class="block rounded px-3 py-2 hover:bg-transparent hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 [&.active]:text-sky-500"
+              :class="{ active: selectedNav === 'contact' }"
               >contact</a
             >
           </li>
@@ -107,15 +111,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-// import { onMounted, ref } from 'vue'
-// import { Collapse } from 'flowbite'
+import { inject, ref } from 'vue'
 import info from '../../info.js'
 
 const logo_name = info.logo_name
 const navbar = ref(null)
 const toggleBtn = ref(null)
 const darkMode = ref(true)
+const selectedNav = inject('selectedNav')
+
 defineEmits(['scroll'])
 const toggleDark = () => {
   if (localStorage.getItem('color-theme')) {
