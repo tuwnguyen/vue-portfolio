@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="border-gray-200 bg-[#f7f7f7]">
+  <div class="border-gray-200 bg-[#f7f7f7] dark:bg-[#0f182a]">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-base text-gray-700 sm:text-center"
+        <span class="text-base text-gray-700 dark:text-gray-500 sm:text-center"
           >© 2024 <a href="/" class="hover:underline">Huy Nguyen.</a>
         </span>
         <div class="mt-4 flex sm:mt-0 sm:justify-center">

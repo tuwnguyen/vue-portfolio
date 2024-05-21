@@ -27,7 +27,7 @@
               <i :class="skill.icon"></i>
             </div>
           </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">{{ skill.title }}</h3>
+          <h3 class="mb-2 text-lg font-bold dark:text-white">{{ skill.title }}</h3>
           <p class="text-gray-700 dark:text-gray-400 md:max-w-full md:break-words">
             {{ skill.info.join(', ') }}
           </p>

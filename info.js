@@ -8,11 +8,11 @@ let info = {
   introduce: "Hi there, I'm Huy Nguyen.",
   description: {
     line1:
-      'Welcome <span class="text-lg">👏</span> I\'m a Full Stack Developer specializing in Node.js and Vue.js. I\'m passionate about <span class="font-medium">Web Development</span>, <span class="font-medium">Cloud Computing</span> and <span class="font-medium">Web/System Architecture</span>.',
-    line2: "I'm currently working with,",
+      'Welcome <span class="text-2xl">👏</span> I\'m a Full Stack Developer specializing in Node.js and Vue.js. I\'m passionate about <span class="font-medium">Web Development</span>, <span class="font-medium">Cloud Computing</span> and <span class="font-medium">Web/System Architecture</span>.',
+    line2: 'Currently, I am working with:',
     line3: ['NodeJS', 'Vue', 'React', 'AWS', 'Docker', 'DynamoDB'],
     line4:
-      "Throughout my career, I've had the opportunity to work on a variety of projects, from implementing backend and frontend applications to developing serverless, cloud services. I am enthusiastic about staying up-to-date with the latest technologies and best practices in full stack development, and I'm always eager to learn new skills and take on new challenges."
+      "I've had the opportunity to work on a variety of projects, from implementing backend and frontend applications to developing serverless, cloud services. I am enthusiastic about staying up-to-date with the latest technologies and best practices in full stack development, and I'm always eager to learn new skills and take on new challenges."
   },
   links: {
     linkedin: 'https://www.linkedin.com/in/nguyen-viethuy-941976167/',
