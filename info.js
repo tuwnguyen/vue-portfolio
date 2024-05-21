@@ -1,7 +1,7 @@
 let info = {
   name: 'Huy Nguyen',
   logo_name: 'tuw nguyen',
-  flat_picture: './src/assets/kingk.png',
+  flat_picture: './src/assets/astronaut.png',
   config: {
     use_cookies: true
   },

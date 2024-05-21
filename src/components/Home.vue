@@ -17,7 +17,7 @@
             class="bg-linear-gradient absolute left-1/2 top-1/2 h-[256px] w-[256px] -translate-x-1/2 -translate-y-1/2 blur-3xl md:h-[400px] md:w-[400px]"
           ></div>
           <img
-            class="absolute left-1/2 top-1/2 h-auto max-h-[350px] max-w-[300px] -translate-x-1/2 -translate-y-1/2 md:max-h-[370px] md:max-w-[300px]"
+            class="absolute left-1/2 top-1/2 h-auto max-h-[350px] max-w-[350px] -translate-x-1/2 -translate-y-1/2 md:max-h-[370px] md:max-w-[350px]"
             :src="picture"
             alt=""
           />
