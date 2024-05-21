@@ -28,8 +28,8 @@
         e.date
       }}</time>
       <h3 class="text-lg font-medium dark:text-[#cac9c9]">{{ e.name }}, {{ e.place }}</h3>
-      <p class="mb-4 text-base text-gray-500 dark:text-gray-400">{{ e.degree || e.position }}</p>
-      <p class="mb-4 text-base text-gray-500 dark:text-gray-400">
+      <p class="mb-4 text-base text-gray-700 dark:text-gray-400">{{ e.degree || e.position }}</p>
+      <p class="mb-4 text-base text-gray-700 dark:text-gray-400">
         {{ e.description }}
       </p>
       <span

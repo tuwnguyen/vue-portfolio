@@ -37,7 +37,7 @@
               type="email"
               id="email"
               v-model="email"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-[#0e192a] dark:text-white dark:placeholder-gray-400"
               placeholder="name@abc.com"
               required
             />
@@ -55,7 +55,7 @@
               type="text"
               id="subject"
               v-model="name"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-[#0e192a] dark:text-white dark:placeholder-gray-400"
               placeholder="tuw nguyen"
               required
             />
@@ -74,7 +74,7 @@
               id="message"
               rows="6"
               v-model="message"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-[#0e192a] dark:text-white dark:placeholder-gray-400"
               placeholder="leave a comment..."
             ></textarea>
           </div>
@@ -82,7 +82,7 @@
             :disabled="disabledSubmit"
             type="button"
             @click.prevent="sendEmail()"
-            class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center font-medium text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black disabled:cursor-not-allowed dark:border-white dark:bg-[#0b1829] dark:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black dark:focus:ring-black"
+            class="w-full rounded-[4px] border border-solid border-black bg-white p-2 text-center text-black hover:bg-black hover:text-white focus:outline-none focus:ring-4 focus:ring-black disabled:cursor-not-allowed dark:border-white dark:bg-[#0b1829] dark:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black dark:focus:ring-black"
             data-aos="fade"
             data-aos-once="true"
             data-aos-duration="1000"

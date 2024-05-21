@@ -24,9 +24,14 @@
         </div>
       </div>
       <div class="flex flex-col justify-between gap-8 p-4 leading-normal md:w-1/2">
-        <span class="text-3xl font-medium dark:text-[#cac9c9]">hello, i'm Huy...</span>
-        <div class="text-justify dark:text-[#cac9c9]">
-          <p v-html="description"></p>
+        <span class="text-3xl font-medium dark:text-white">{{ introduce }}</span>
+        <div class="flex flex-col space-y-6 dark:text-[#cac9c9]">
+          <p v-html="description.line1"></p>
+          <p v-html="description.line2"></p>
+          <ul role="list" class="list-arrow grid list-inside grid-cols-2 pl-5 font-medium">
+            <li v-for="(tech, idx) in description.line3" :key="idx">{{ tech }}</li>
+          </ul>
+          <p v-html="description.line4"></p>
         </div>
         <div class="flex justify-center gap-4">
           <button
@@ -68,6 +73,7 @@
 import info from '../../info'
 
 const picture = info.flat_picture
+const introduce = info.introduce
 const description = info.description
 const linkedin = info.links.linkedin
 const github = info.links.github

@@ -8,6 +8,9 @@ export default {
       'roboto-mono': ['Roboto Mono', 'sans-serif']
     },
     extend: {
+      listStyleType: {
+        arrow: '"‣ "'
+      },
       colors: {
         primary: {
           50: '#f8f9fa',

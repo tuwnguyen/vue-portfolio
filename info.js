@@ -3,13 +3,17 @@ let info = {
   logo_name: 'tuw nguyen',
   flat_picture: './src/assets/kingk.png',
   config: {
-    use_cookies: true,
-    navbar: {
-      blur: false
-    }
+    use_cookies: true
   },
-  description:
-    'A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ',
+  introduce: "Hi there, I'm Huy Nguyen.",
+  description: {
+    line1:
+      'Welcome <span class="text-lg">👏</span> I\'m a Full Stack Developer specializing in Node.js and Vue.js. I\'m passionate about <span class="font-medium">Web Development</span>, <span class="font-medium">Cloud Computing</span> and <span class="font-medium">Web/System Architecture</span>.',
+    line2: "I'm currently working with,",
+    line3: ['NodeJS', 'Vue', 'React', 'AWS', 'Docker', 'DynamoDB'],
+    line4:
+      "Throughout my career, I've had the opportunity to work on a variety of projects, from implementing backend and frontend applications to developing serverless, cloud services. I am enthusiastic about staying up-to-date with the latest technologies and best practices in full stack development, and I'm always eager to learn new skills and take on new challenges."
+  },
   links: {
     linkedin: 'https://www.linkedin.com/in/nguyen-viethuy-941976167/',
     github: 'https://github.com/tuwnguyen',
@@ -18,96 +22,78 @@ let info = {
     instagram: 'https://www.instagram.com/nguyentuvv/',
     facebook: 'https://www.facebook.com/tuw.nguyen.ha97',
     resume:
-      'https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf'
+      'https://docs.google.com/document/d/1K15bVvDSEdSKqiIZOeYDlU7VVOp_SUHJ/edit?usp=sharing&ouid=107912441702618210844&rtpof=true&sd=true'
   },
   education: [
     {
-      name: 'Indiana University Bloomington',
-      place: 'USA',
-      date: 'Aug, 2019 - May, 2021',
-      degree: 'Masters in Computer Science',
-      gpa: '3.7/4.0',
-      description:
-        "Currently pursuing my Master's in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.",
-      skills: [
-        'Artificial Intelligence',
-        'Software Engineering',
-        'Algorithms',
-        'Computer Vision',
-        'Music Data Mining',
-        'OS'
-      ]
+      name: 'Microsoft Information Technology Academy',
+      place: 'Da Nang University, Vietnam',
+      date: 'Nov, 2017 - Aug, 2018',
+      degree: 'ASP.NET Development',
+      description: 'Achieved a certificate in ASP.NET in web development while studying here.',
+      skills: ['C#', 'ASP.NET']
     },
     {
-      name: 'Manipal Institute of Technology',
-      place: 'India',
-      date: 'Aug, 2015 - July, 2019',
-      degree: 'Bachelors in Computer and Communication',
-      gpa: '8.0/10.0',
+      name: 'Vietnam - Korea Friendship College',
+      place: 'Vietnam',
+      date: 'Sep, 2015 - May, 2017',
+      degree: 'Information Technology',
       description:
-        'Graduated from Manipal Institute of Technology, Manipal with a bachelors degree in Computer and Communications Engineering.',
-      skills: [
-        'AI',
-        'Neural Netwroks',
-        'Data Mining',
-        'Computer Vision',
-        'Pattern Recognition',
-        'HCI',
-        'Software Engineering'
-      ]
+        'Graduated from Vietnam - Korea Friendship College, Da Nang with a bachelor degree in Information Techlogoly.',
+      skills: ['Software Engineering', 'Algorithms', 'Java', 'OS']
     }
   ],
   experience: [
     {
-      name: 'Cyberinfrastructure for Network Science Center',
-      place: 'Bloomington, Indiana',
-      date: 'Jun, 2020 - Present',
-      position: 'Research Assistant; Full Stack Developer',
+      name: 'Medical Service',
+      place: 'Da Nang Technology, Vietnam',
+      date: 'Mar, 2022 - Sep, 2023',
+      position: 'Full Stack Developer',
       description:
-        'Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.',
-      skills: ['Angular', 'Node.js', 'Vega', 'Shell', 'Typescript']
+        'Worked as a full stack web developer, implementing various features and fixing bugs for an medical application widely used in Japan, allowing doctors and patients to connect more easily.',
+      skills: ['Typescript', 'React', 'Nextjs', 'Nodejs', 'AWS Cloud', 'Serverless']
     },
     {
-      name: 'Skylark Drones',
-      place: 'Bangalore, India',
-      date: 'Jan, 2019 - Jun, 2021',
-      position: 'Full Stack Web Developer',
+      name: 'Business Card',
+      place: 'MTI Technology Da Nang, Vietnam',
+      date: 'Jan, 2019 - Jan, 2020',
+      position: 'Backend Developer',
       description:
-        'Worked as a full stack web developer, implementing various features and fixing bugs for Skylark Drones’ central management system called Operations Portal and Data Mining Server.',
-      skills: ['MongoDB', 'Flask', 'VueJS', 'NGINX']
+        'Developed an API server to handle scan card processing, allowing the detection of information about the business card and saving it in the database.',
+      skills: ['Nodejs', 'PostgreSQL', 'GCP', 'Vision API', 'NLP']
     },
     {
-      name: 'Hridayam Soft Solutions',
-      place: 'Mumbai, India',
-      date: 'May, 2018 - Jun, 2018',
-      position: 'Computer Vision Engineer',
+      name: 'Profit and Loss',
+      place: 'MTI Technology Da Nang, Vietnam',
+      date: 'May, 2018 - Jan, 2019',
+      position: 'Full Stack Developer',
       description:
-        'Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.',
-      skills: ['Python', 'OpenCV', 'PyTesseract', 'AngularJS', 'NodeJS']
+        'Developed a tool that can manage the time off (days, hours) of employees in the company, employees can register vacation schedules, time off, and days off right on the app.',
+      skills: ['React', 'ASP.NET Core', 'SQL']
     },
     {
-      name: 'Elementail Labs',
-      place: 'Mumbai, India',
-      date: 'May, 2017 - July, 2017',
-      position: 'Full Stack Web Developer',
+      name: 'E-Commerce Shop',
+      place: 'Da Nang University',
+      date: 'Mar, 2018 - Apr, 2018',
+      position: 'Web Developer',
       description:
-        'Implemented various contracts and deployed them on the upcoming blockchain technology - Ethereum, while also working as a MEAN stack web developer for Elemential Labs’ website.',
-      skills: ['MongoDB', 'AngularJS', 'NodeJS', 'ExpressJS']
+        'As a graduation project, developed a website with the same functions as an e-commerce website.',
+      skills: ['ASP.NET', 'Angularjs', 'SQL']
     },
     {
-      name: 'Viteos Capital Market Services s',
-      place: 'Mumbai, India',
-      date: 'May, 2016 - July, 2016',
-      position: 'Software Developer',
+      name: 'Japan Insurance',
+      place: 'FPT Software Da Nang',
+      date: 'Sep, 2017 - Mar, 2018',
+      position: 'Web Developer',
       description:
-        'Evaluated technologies, and building proof of concept/prototype solutions for trade processing and mathematical model based evaluations, while working in the software development team.',
-      skills: ['C#', 'C++', 'Visual Studio']
+        'Worked as a web developer, implementing and fixing bugs in the front-end in the insurance application.',
+      skills: ['HTML/CSS', 'Javascript']
     }
   ],
   skills: [
     {
       title: 'languages',
-      info: ['Python', 'Javascript', 'TypeScript', 'Java', 'C#', 'SQL', 'NoSQL'],
+      info: ['Javascript', 'TypeScript', 'C#', 'SQL', 'NoSQL'],
       icon: 'fa-solid fa-code'
     },
     {
@@ -117,21 +103,21 @@ let info = {
     },
     {
       title: 'web technologies',
-      info: ['Vue', 'React', 'Node', 'HTML', 'CSS'],
+      info: ['Vue', 'React', 'Node', 'HTML/CSS', 'Tailwind'],
       icon: 'fa-solid fa-laptop-code'
     },
     {
       title: 'databases',
-      info: ['MongoDB', 'MySQL', 'DynamoDB', 'SQL Server'],
+      info: ['MongoDB', 'DynamoDB', 'MySQL', 'Portgre'],
       icon: 'fa-solid fa-database'
     },
     {
       title: 'operating systems & tools',
-      info: ['MacOS', 'Ubuntu', 'Windows', 'Agile', 'Scrum', 'VS Code'],
+      info: ['MacOS', 'Linux', 'Windows', 'Agile(Scrum)', 'Git', 'Docker'],
       icon: 'fa-solid fa-screwdriver-wrench'
     },
     {
-      title: 'aws cloud',
+      title: 'cloud',
       info: [
         'AWS S3',
         'EC2',
@@ -147,295 +133,174 @@ let info = {
   ],
   portfolio: [
     {
-      name: 'Sheet Recognizer',
+      name: 'Weather App',
       pictures: [
         {
-          img: './src/assets/portfolio/msr/one.png'
+          img: './src/assets/portfolio/vwp/one.png'
         },
         {
-          img: './src/assets/portfolio/msr/two.png'
+          img: './src/assets/portfolio/vwp/two.png'
         },
         {
-          img: './src/assets/portfolio/msr/three.png'
+          img: './src/assets/portfolio/vwp/three.png'
         },
         {
-          img: './src/assets/portfolio/msr/four.png'
+          img: './src/assets/portfolio/vwp/four.png'
         }
       ],
-      technologies: ['Computer Vision', 'OpenCV', 'AI', 'Flask', 'Sockets'],
-      category: 'Algorithm',
-      date: 'Jan, 2020 - Mar, 2020',
-      github: 'https://github.com/hrishikeshpaul/music-sheet-recognizer-backend',
-      visit: 'https://github.com/hrishikeshpaul/music-sheet-recognizer-backend',
-      description:
-        'Music Sheet Recognizer (MSR) highlights basic Image Processing and Recognition. Like Optical Character Recognition, this tool is used to detect music notes and rests. It makes use of basic Computer Vision techniques such as Convolution, Edge Detections, Hough Transforms and Template Matching to detect notes and rests on a music sheet. '
-    },
-    {
-      name: 'NoQ Job Portal',
-      pictures: [
-        {
-          img: './src/assets/portfolio/noq/logo.png'
-        },
-        {
-          img: './src/assets/portfolio/noq/one.png'
-        },
-        {
-          img: './src/assets/portfolio/noq/two.png'
-        },
-        {
-          img: './src/assets/portfolio/noq/three.png'
-        },
-        {
-          img: './src/assets/portfolio/noq/four.png'
-        }
-      ],
-      technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
+      technologies: ['Vue3', 'Vite', 'Tailwind', 'Mapbox', 'Geocoding API'],
       category: 'Website',
-      date: 'Sep, 2019 - Dec  , 2019',
-      github: 'https://github.com/hrishikeshpaul/noq',
-      visit: 'https://noq-client.herokuapp.com/',
+      date: 'Jan, 2024',
+      github: 'https://github.com/tuwnguyen/vue-weather-app',
+      visit: 'https://tuwnguyen-weather.netlify.app/',
       description:
-        'No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system.'
+        'Weather App is a simple application to view weather forecasts all over the world using Vue3 and Open Weather API'
     },
     {
-      name: 'POST',
+      name: 'IP Tracking',
       pictures: [
         {
-          img: './src/assets/portfolio/post/one.png'
+          img: './src/assets/portfolio/vit/one.png'
         },
         {
-          img: './src/assets/portfolio/post/two.png'
-        }
-      ],
-      technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
-      category: 'Algorithm',
-      github: 'https://github.com/hrishikeshpaul/pos-tagger',
-      date: 'Oct, 2019 - Nov, 2019',
-      visit: 'https://post-client.herokuapp.com/',
-      description:
-        'Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling.'
-    },
-    {
-      name: 'Suicide Analyzer',
-      pictures: [
-        {
-          img: './src/assets/portfolio/suicide/suicide-analyzer.png'
+          img: './src/assets/portfolio/vit/two.png'
         },
         {
-          img: './src/assets/portfolio/suicide/suicide2-original.png'
+          img: './src/assets/portfolio/vit/three.png'
         }
       ],
-      technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
+      technologies: ['Vue3', 'Vite', 'Tailwind', 'Leaflet', 'Mapbox', 'Geocoding API'],
       category: 'Website',
-      date: 'Oct, 2018 - Nov, 2018',
-      github: 'https://github.com/hrishikeshpaul/whodata',
-      visit: 'https://skylarktiral.herokuapp.com/',
+      date: 'Feb, 2024',
+      github: 'https://github.com/tuwnguyen/vue-ip-tracking',
+      visit: 'https://tuwnguyen-ip-tracker.netlify.app/',
       description:
-        'This is a web application, uses a map to demonstrate the number suicides committed around the globe, according to a dataset provided by the WHO. The application consists of a Leaflet map that colors every nation, based on the number of suicides that have been committed in that country, for that year. It provides us with the capability to select the data as well as the continent.'
+        'IP Tracking is a simple application to find location based on public ip. The website is using Vue3, Vite and some built-in APIs like Mapxbox and GeoCoding.'
     },
     {
-      name: 'Sentiment Analyzer',
+      name: 'Lorem Ipsum',
       pictures: [
         {
-          img: './src/assets/portfolio/smit/one.png'
+          img: './src/assets/portfolio/lorem/react.jpg'
         },
         {
-          img: './src/assets/portfolio/smit/two.png'
+          img: './src/assets/portfolio/lorem/vue.jpg'
         },
         {
-          img: './src/assets/portfolio/smit/three.png'
+          img: './src/assets/portfolio/lorem/docker.jpg'
         },
         {
-          img: './src/assets/portfolio/smit/four.png'
+          img: './src/assets/portfolio/lorem/node.png'
         }
       ],
-      technologies: ['LSTM', 'Keras', 'Angular', 'Tweepy', 'Heroku', 'Python'],
-      category: 'Alogrithm',
-      date: 'Feb, 2018 - Apr  , 2018',
-      github: 'https://github.com/hrishikeshpaul/sih',
-      visit: 'https://angel.co/projects/1009777-sentiment-analysis',
-      description:
-        'Developing this for the final round of Smart India Hackathon 2018, the web application is a platform for showcasing the sentiment of the tweets of the people in the Telangana region in India on policy satisfaction, services and problem definitions. The minimal UI design consists of different bins, that have their respective tweets, all scraped from twitter. There is also a simple graphical representation denoting the sentiment of the tweets.'
-    },
-    {
-      name: 'Clumpr',
-      pictures: [
-        {
-          img: './src/assets/portfolio/clumpr/logo.png'
-        },
-        {
-          img: './src/assets/portfolio/clumpr/one.png'
-        },
-        {
-          img: './src/assets/portfolio/clumpr/two.png'
-        }
-      ],
-      technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
-      category: 'Web App',
-      github: 'https://github.com/hrishikeshpaul/clumpr',
-      date: 'Sep, 2017 - Nov, 2017',
-      visit: 'https://github.com/hrishikeshpaul/clumpr',
-      description:
-        'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
-    },
-    {
-      name: 'Nutricare',
-      pictures: [
-        {
-          img: './src/assets/portfolio/nc/one.png'
-        },
-        {
-          img: './src/assets/portfolio/nc/two.png'
-        },
-        {
-          img: './src/assets/portfolio/nc/three.png'
-        },
-        {
-          img: './src/assets/portfolio/nc/four.png'
-        },
-        {
-          img: './src/assets/portfolio/nc/five.png'
-        },
-        {
-          img: './src/assets/portfolio/nc/six.png'
-        }
-      ],
-      technologies: ['Node', 'Angular', 'Express', 'MongDB', 'Medical'],
+      technologies: ['Node', 'React', 'Docker', 'Vue'],
       category: 'Website',
-      github: 'https://github.com/hrishikeshpaul/clumpr',
-      date: 'May, 2017 - Aug, 2017',
-      visit: 'https://angel.co/projects/576300-nutricare',
+      github: 'https://github.com/',
+      date: 'Feb, 2024 - May, 2024',
+      visit: '/',
       description:
-        'Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc).'
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum beatae deleniti quae consectetur dicta voluptatum corporis eos repudiandae id inventore dolores nihil sunt magni quidem doloremque assumenda voluptate obcaecati.'
+    },
+    {
+      name: 'Lorem Ipsum',
+      pictures: [
+        {
+          img: './src/assets/portfolio/lorem/docker.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/vue.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/react.jpg'
+        },
+
+        {
+          img: './src/assets/portfolio/lorem/node.png'
+        }
+      ],
+      technologies: ['Node', 'React', 'Docker', 'Vue'],
+      category: 'Website',
+      github: 'https://github.com/',
+      date: 'Feb, 2024 - May, 2024',
+      visit: '/',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum beatae deleniti quae consectetur dicta voluptatum corporis eos repudiandae id inventore dolores nihil sunt magni quidem doloremque assumenda voluptate obcaecati.'
+    },
+    {
+      name: 'Lorem Ipsum',
+      pictures: [
+        {
+          img: './src/assets/portfolio/lorem/vue.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/react.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/docker.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/node.png'
+        }
+      ],
+      technologies: ['Node', 'React', 'Docker', 'Vue'],
+      category: 'Website',
+      github: 'https://github.com/',
+      date: 'Feb, 2024 - May, 2024',
+      visit: '/',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum beatae deleniti quae consectetur dicta voluptatum corporis eos repudiandae id inventore dolores nihil sunt magni quidem doloremque assumenda voluptate obcaecati.'
+    },
+    {
+      name: 'Lorem Ipsum',
+      pictures: [
+        {
+          img: './src/assets/portfolio/lorem/node.png'
+        },
+        {
+          img: './src/assets/portfolio/lorem/vue.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/react.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/docker.jpg'
+        }
+      ],
+      technologies: ['Node', 'React', 'Docker', 'Vue'],
+      category: 'Website',
+      github: 'https://github.com/',
+      date: 'Feb, 2024 - May, 2024',
+      visit: '/',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum beatae deleniti quae consectetur dicta voluptatum corporis eos repudiandae id inventore dolores nihil sunt magni quidem doloremque assumenda voluptate obcaecati.'
+    },
+    {
+      name: 'Lorem Ipsum',
+      pictures: [
+        {
+          img: './src/assets/portfolio/lorem/react.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/vue.jpg'
+        },
+
+        {
+          img: './src/assets/portfolio/lorem/docker.jpg'
+        },
+        {
+          img: './src/assets/portfolio/lorem/node.png'
+        }
+      ],
+      technologies: ['Node', 'React', 'Docker', 'Vue'],
+      category: 'Website',
+      github: 'https://github.com/',
+      date: 'Feb, 2024 - May, 2024',
+      visit: '/',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ipsum beatae deleniti quae consectetur dicta voluptatum corporis eos repudiandae id inventore dolores nihil sunt magni quidem doloremque assumenda voluptate obcaecati.'
     }
   ],
-  portfolio_design: [
-    {
-      name: 'Guituna',
-      title: 'Guituna - Mockup Design',
-      pictures: [
-        {
-          img: import('./src/assets/designs/coursera1/MoodBoard.png'),
-          title: 'MoodBoard'
-        },
-        {
-          img: import('./src/assets/designs/coursera1/Mockups 1.png'),
-          title: 'Mockups 1'
-        },
-        {
-          img: import('./src/assets/designs/coursera1/Mockups 2.png'),
-          title: 'Mockups 2'
-        },
-        {
-          img: import('./src/assets/designs/coursera1/App Elements.png'),
-          title: 'App Elements'
-        }
-      ],
-      technologies: ['XD', 'Illustrator'],
-      category: 'Visual Design',
-      github: '',
-      date: 'May, 2020 - Jun, 2020',
-      visit: '',
-      description:
-        "Guituna is a simple, lightweight and intuitive guitar tuner, that provides different modes of guitars based on your usage. You can either select a specific string to tune, or free tune your guitar based on the frequency shown on the meter. Guituna also provides a handful of different tunings to help explore various tuning paradigms. There is also an array of settings that can be configured to your liking based on the devices you're using. <br/><br/>The interface aims to highlight the use of a minimal design and providing just enough controls to make for a great tuner, while exposing various possibilities of guitarists to explore."
-    },
-    {
-      name: 'Pantree',
-      title: 'Pantree - Mockup Design',
-      pictures: [
-        {
-          img: import('./src/assets/designs/pantree/MoodBoard.png'),
-          title: 'Moodboard'
-        },
-        {
-          img: import('./src/assets/designs/pantree/1.png'),
-          title: 'Mockups 1'
-        },
-        {
-          img: import('./src/assets/designs/pantree/2.png'),
-          title: 'Mockups 2'
-        }
-      ],
-      technologies: ['XD', 'Illustrator'],
-      category: 'Visual Design',
-      github: '',
-      date: 'May, 2020 - July, 2020',
-      visit: '',
-      description:
-        'Pantree is a recipiece finding and recommending application. It is often the case that you have run to your closest grocery store just to pick up one item that is missing in your kitchen. Pantree keeps a track of all your ingredients, and suggests recipes based on your meal preferences and past recipes. <br/><br/> The goal of the interface is to keep it similar to various recipe/food apps to reduce the learning required by the user, but also provide a smooth interface for users to seemlessly browse through recipes and ingredients.'
-    },
-    {
-      name: 'Bunder',
-      title: 'Bunder - MVP Proposal',
-      pictures: [
-        {
-          img: import('./src/assets/designs/bunder/Moodboard.png'),
-          title: 'Moodboard'
-        },
-        {
-          img: import('./src/assets/designs/bunder/Mockup 1.png'),
-          title: 'Mockup 1'
-        },
-        {
-          img: import('./src/assets/designs/bunder/Mockup 2.png'),
-          title: 'Mockup 2'
-        },
-        {
-          img: import('./src/assets/designs/bunder/Mockup 3.png'),
-          title: 'Mockup 3'
-        },
-        {
-          img: import('./src/assets/designs/bunder/Market Research 1.png'),
-          title: 'Market Research 1'
-        },
-        {
-          img: import('./src/assets/designs/bunder/Market Research 2.png'),
-          title: 'Market Research 2'
-        }
-      ],
-      technologies: ['XD', 'Illustrator'],
-      category: 'Visual Design',
-      github: '',
-      date: 'May, 2020 - July, 2020',
-      visit: '',
-      description:
-        'Bunder is an intuitive web platform for micro-communities to share sensitive data with privacy within the community and allow engagement amongst them. Our aim is two-fold - Co-existing and Collaboration. The former is executed by providing a platform for communities that are geographically positioned in the same proximity (Housing societies, Dorms, Apartment Complexes) to have and share data (exact apartment addresses, phone number, apartment housing rules, individuals tested positive for COVID-19) in an exclusive platform. The latter is to give these people in the community the ability to carry out a task you are physically or remotely unable to do; with dignity and ease.'
-    }
-  ],
-  recommendations: [
-    {
-      title:
-        'In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.',
-      author: 'Ushanas Shastri',
-      position: 'CTO',
-      company: 'Viteos Capital Market Services',
-      location: 'Mumbai'
-    },
-    {
-      title:
-        'I feel his budding leadership abilities will become even more effective in a diverse and challenging environment.',
-      author: 'Anil Dukkipatty',
-      position: 'CTO',
-      company: 'Elemential Labs',
-      location: 'Mumbai'
-    },
-    {
-      title:
-        "He has gained great knowledge and experience of SDE, and has learned ot develop the application keeping in mind the client's perpective and also making it creative.",
-      author: 'Chintan Shah',
-      position: 'Director',
-      company: 'Hridayam Soft Solution',
-      location: 'Mumbai'
-    },
-    {
-      title:
-        'During the course of his employment we have found him to be a self-started who was motivated, duty bound and a highly commited team player.',
-      author: 'Mrinal Pai',
-      position: 'Co-Founder & Director',
-      company: 'Skylark Drones',
-      location: 'Bangalore'
-    }
-  ]
+  architect: []
 }
 
 export default info
