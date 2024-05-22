@@ -84,7 +84,8 @@
           </li>
           <li class="">
             <a
-              href="#"
+              :href="resume"
+              target="_blank"
               class="block rounded px-3 py-2 text-sky-500 hover:underline md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
               >resume</a
             >
@@ -93,7 +94,7 @@
             <a
               href="#"
               @click.prevent="toggleDark()"
-              class="block rounded px-3 py-2 hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
+              class="block rounded p-3 hover:text-sky-500 dark:text-[#d3d2d2] dark:hover:text-sky-500 md:border-0 md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent"
               ><i
                 class="w-4"
                 :class="{
@@ -115,6 +116,7 @@ import { inject, ref } from 'vue'
 import info from '../../info.js'
 
 const logo_name = info.logo_name
+const resume = info.links.resume
 const navbar = ref(null)
 const toggleBtn = ref(null)
 const darkMode = ref(true)

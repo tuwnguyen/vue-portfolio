@@ -21,8 +21,7 @@ let info = {
     discord: 'https://discord.com/',
     instagram: 'https://www.instagram.com/nguyentuvv/',
     facebook: 'https://www.facebook.com/tuw.nguyen.ha97',
-    resume:
-      'https://docs.google.com/document/d/1K15bVvDSEdSKqiIZOeYDlU7VVOp_SUHJ/edit?usp=sharing&ouid=107912441702618210844&rtpof=true&sd=true'
+    resume: 'https://drive.google.com/file/d/143vPbm8EPUZD-ZLV-vj4CVikgDjazAXl/view?usp=sharing'
   },
   education: [
     {
@@ -45,12 +44,21 @@ let info = {
   ],
   experience: [
     {
+      name: 'Ticket Selling Service',
+      place: 'MTI Technology Da Nang, Vietnam',
+      date: 'Sep, 2023 - Present',
+      position: 'Full Stack Developer',
+      description:
+        'Developing the front-end and back-end of a ticket selling app in a Japan railway system. Implementing and fixing bugs some booking and payment feature in the application.',
+      skills: ['Javascript', 'Vue', 'Nodejs', 'AWS Cloud', 'Serverless']
+    },
+    {
       name: 'Medical Service',
-      place: 'Da Nang Technology, Vietnam',
+      place: 'MTI Technology Da Nang, Vietnam',
       date: 'Mar, 2022 - Sep, 2023',
       position: 'Full Stack Developer',
       description:
-        'Worked as a full stack web developer, implementing various features and fixing bugs for an medical application widely used in Japan, allowing doctors and patients to connect more easily.',
+        'Worked as a full stack web developer, implementing various features and fixing bugs for a medical service in front-end, back-end, as well as cloud. Building the service that allows doctors and patients to connect more easily through chat, video calls, and IVR platforms.',
       skills: ['Typescript', 'React', 'Nextjs', 'Nodejs', 'AWS Cloud', 'Serverless']
     },
     {
@@ -59,7 +67,7 @@ let info = {
       date: 'Jan, 2019 - Jan, 2020',
       position: 'Backend Developer',
       description:
-        'Developed an API server to handle scan card processing, allowing the detection of information about the business card and saving it in the database.',
+        'Developed and designed an API server to handle scan card processing, allowing the detection of information about the business card and saving it in the database.',
       skills: ['Nodejs', 'PostgreSQL', 'GCP', 'Vision API', 'NLP']
     },
     {
@@ -68,18 +76,18 @@ let info = {
       date: 'May, 2018 - Jan, 2019',
       position: 'Full Stack Developer',
       description:
-        'Developed a tool that can manage the time off (days, hours) of employees in the company, employees can register vacation schedules, time off, and days off right on the app.',
+        'Developed front-end and back-end of a tool that can manage the time off (days, hours) of employees in the company, and implemented various features that allow employees to register vacation schedules, time off, and days off right on the app.',
       skills: ['React', 'ASP.NET Core', 'SQL']
     },
-    {
-      name: 'E-Commerce Shop',
-      place: 'Da Nang University',
-      date: 'Mar, 2018 - Apr, 2018',
-      position: 'Web Developer',
-      description:
-        'As a graduation project, developed a website with the same functions as an e-commerce website.',
-      skills: ['ASP.NET', 'Angularjs', 'SQL']
-    },
+    // {
+    //   name: 'E-Commerce Shop',
+    //   place: 'Da Nang University',
+    //   date: 'Mar, 2018 - Apr, 2018',
+    //   position: 'Web Developer',
+    //   description:
+    //     'As a graduation project, developed a website with the same functions as an e-commerce website.',
+    //   skills: ['ASP.NET', 'Angularjs', 'SQL']
+    // },
     {
       name: 'Japan Insurance',
       place: 'FPT Software Da Nang',
