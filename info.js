@@ -15,7 +15,7 @@ let info = {
       "I've had the opportunity to work on a variety of projects, from implementing backend and frontend applications to developing serverless, cloud services. I am enthusiastic about staying up-to-date with the latest technologies and best practices in full stack development, and I'm always eager to learn new skills and take on new challenges."
   },
   links: {
-    linkedin: 'https://www.linkedin.com/in/nguyen-viethuy-941976167/',
+    linkedin: 'https://www.linkedin.com/in/tuwnguyen/',
     github: 'https://github.com/tuwnguyen',
     twitter: 'https://x.com/TuwNguyen',
     discord: 'https://discord.com/',
