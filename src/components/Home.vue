@@ -71,8 +71,7 @@
 
 <script setup>
 import info from '../../info'
-
-const picture = info.flat_picture
+const picture = new URL(`../assets/${info.flat_picture}`, import.meta.url).href
 const introduce = info.introduce
 const description = info.description
 const linkedin = info.links.linkedin

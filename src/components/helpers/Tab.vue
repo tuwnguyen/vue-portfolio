@@ -21,7 +21,7 @@
           data-aos-once="true"
         >
           <a href="#">
-            <img class="h-auto rounded-t-lg" :src="project.pictures[0].img" alt="" />
+            <img class="h-auto rounded-t-lg" :src="importImg(project.pictures[0].img)" alt="" />
           </a>
           <div class="p-5">
             <a href="#">
@@ -92,6 +92,8 @@ const { title, porfolioInfo, showBtn } = defineProps({
   porfolioInfo: Array,
   showBtn: Boolean
 })
+
+const importImg = (img) => new URL(`../../assets/${img}`, import.meta.url).href
 
 const showModal = ref(false)
 const modalInfo = ref({})

@@ -11,7 +11,7 @@
         data-carousel-item
       >
         <img
-          :src="img.img"
+          :src="importImg(img.img)"
           class="absolute left-1/2 top-1/2 block h-auto max-w-full -translate-x-1/2 -translate-y-1/2"
           alt=""
         />
@@ -86,6 +86,8 @@ defineProps({
     require: true
   }
 })
+
+const importImg = (img) => new URL(`../../assets/${img}`, import.meta.url).href
 </script>
 
 <style lang="scss" scoped></style>

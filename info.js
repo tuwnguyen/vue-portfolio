@@ -1,7 +1,7 @@
 let info = {
   name: 'Huy Nguyen',
   logo_name: 'tuw nguyen',
-  flat_picture: import('./src/assets/astronaut.png'),
+  flat_picture: 'astronaut.png',
   config: {
     use_cookies: true
   },
@@ -21,7 +21,7 @@ let info = {
     discord: 'https://discord.com/',
     instagram: 'https://www.instagram.com/nguyentuvv/',
     facebook: 'https://www.facebook.com/tuw.nguyen.ha97',
-    resume: 'https://drive.google.com/file/d/143vPbm8EPUZD-ZLV-vj4CVikgDjazAXl/view?usp=sharing'
+    resume: 'https://drive.google.com/file/d/1PrWDs74HrXZ9pyukgZv44ko2vb4LY5pT/view?usp=sharing'
   },
   education: [
     {
@@ -144,16 +144,16 @@ let info = {
       name: 'Weather App',
       pictures: [
         {
-          img: import('./src/assets/portfolio/vwp/one.png')
+          img: 'portfolio/vwp/one.png'
         },
         {
-          img: import('./src/assets/portfolio/vwp/two.png')
+          img: 'portfolio/vwp/two.png'
         },
         {
-          img: import('./src/assets/portfolio/vwp/three.png')
+          img: 'portfolio/vwp/three.png'
         },
         {
-          img: import('./src/assets/portfolio/vwp/four.png')
+          img: 'portfolio/vwp/four.png'
         }
       ],
       technologies: ['Vue3', 'Vite', 'Tailwind', 'Mapbox', 'Geocoding API'],
@@ -168,13 +168,13 @@ let info = {
       name: 'IP Tracking',
       pictures: [
         {
-          img: import('./src/assets/portfolio/vit/one.png')
+          img: 'portfolio/vit/one.png'
         },
         {
-          img: import('./src/assets/portfolio/vit/two.png')
+          img: 'portfolio/vit/two.png'
         },
         {
-          img: import('./src/assets/portfolio/vit/three.png')
+          img: 'portfolio/vit/three.png'
         }
       ],
       technologies: ['Vue3', 'Vite', 'Tailwind', 'Leaflet', 'Mapbox', 'Geocoding API'],
@@ -189,16 +189,16 @@ let info = {
       name: 'Lorem Ipsum',
       pictures: [
         {
-          img: import('./src/assets/portfolio/lorem/react.jpg')
+          img: 'portfolio/lorem/react.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/vue.jpg')
+          img: 'portfolio/lorem/vue.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/docker.jpg')
+          img: 'portfolio/lorem/docker.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/node.png')
+          img: 'portfolio/lorem/node.png'
         }
       ],
       technologies: ['Node', 'React', 'Docker', 'Vue'],
@@ -213,17 +213,17 @@ let info = {
       name: 'Lorem Ipsum',
       pictures: [
         {
-          img: import('./src/assets/portfolio/lorem/docker.jpg')
+          img: 'portfolio/lorem/docker.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/vue.jpg')
+          img: 'portfolio/lorem/vue.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/react.jpg')
+          img: 'portfolio/lorem/react.jpg'
         },
 
         {
-          img: import('./src/assets/portfolio/lorem/node.png')
+          img: 'portfolio/lorem/node.png'
         }
       ],
       technologies: ['Node', 'React', 'Docker', 'Vue'],
@@ -238,16 +238,16 @@ let info = {
       name: 'Lorem Ipsum',
       pictures: [
         {
-          img: import('./src/assets/portfolio/lorem/vue.jpg')
+          img: 'portfolio/lorem/vue.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/react.jpg')
+          img: 'portfolio/lorem/react.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/docker.jpg')
+          img: 'portfolio/lorem/docker.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/node.png')
+          img: 'portfolio/lorem/node.png'
         }
       ],
       technologies: ['Node', 'React', 'Docker', 'Vue'],
@@ -262,16 +262,16 @@ let info = {
       name: 'Lorem Ipsum',
       pictures: [
         {
-          img: import('./src/assets/portfolio/lorem/node.png')
+          img: 'portfolio/lorem/node.png'
         },
         {
-          img: import('./src/assets/portfolio/lorem/vue.jpg')
+          img: 'portfolio/lorem/vue.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/react.jpg')
+          img: 'portfolio/lorem/react.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/docker.jpg')
+          img: 'portfolio/lorem/docker.jpg'
         }
       ],
       technologies: ['Node', 'React', 'Docker', 'Vue'],
@@ -286,17 +286,17 @@ let info = {
       name: 'Lorem Ipsum',
       pictures: [
         {
-          img: import('./src/assets/portfolio/lorem/react.jpg')
+          img: 'portfolio/lorem/react.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/vue.jpg')
+          img: 'portfolio/lorem/vue.jpg'
         },
 
         {
-          img: import('./src/assets/portfolio/lorem/docker.jpg')
+          img: 'portfolio/lorem/docker.jpg'
         },
         {
-          img: import('./src/assets/portfolio/lorem/node.png')
+          img: 'portfolio/lorem/node.png'
         }
       ],
       technologies: ['Node', 'React', 'Docker', 'Vue'],
